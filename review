@@ -1,0 +1,59 @@
+
+获取ip a 输出结果中eth0 的ip地址
+[root@redhat-6 puppet]# ip a | grep eth0| grep inet| awk -F " " '{print $2}'
+192.168.22.196/24
+
+思路。grep 匹配行，awk匹配列
+
+集中式版本控制系统是必须联网才能工作，如果在局域网还可以，带宽够大，速度够快，如果在互联网下，如果网速慢的话，
+￼
+zyx-2:git zyx$ git branch -d test
+Deleted branch test (was 7bc0179).
+
+git merge develop         \\合并develop分支到当前分支
+￼
+
+
+git merge命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。
+
+ playbook：编排,定义 Ansible 多任务配置文件,非必需
+
+ansible和puppet的比较：
+puppet：至少包含一个或多个puppetmaster服务器，每个客户端安装agent包。 
+ansible：不需要master和agent，只需要一个节点列表（inventory），允许使用SSH，就可以连接各个节点。
+
+2、拉取/推送模式（pull/push）： 
+puppet：客户端会定期向服务器端确认，接收或者”拉取”需要被应用的配置。 
+ansible：通过ssh协议将命令发送到远程主机，客户端除了python以外不需要安装其他东西。
+
+
+ansible：ansible的playbook按照定义的顺序，依次执行。
+任务列表：
+
+
+虚拟机监控器（Virtual Machine Monitor，VMM），也称之为Hypervisor。虚拟机监控器运行的环境
+
+全虚拟化为客户机提供了完整的虚拟X86平台，包括处理器、内存和外设，支持任何理论上可在真实物理平台上运行的操作系统，为虚拟机的配置提供了最大程度的灵活性
+
+Qemu是一个模拟器，它向Guest OS模拟CPU和其他硬件
+libvirt是目前使用最为广泛的对KVM虚拟机进行管理的工具和API。Libvirtd是一个daemon进程
+
+KVM是linux内核的模块，它需要CPU的支持，采用硬件辅助虚拟化技术Intel-VT，AMD-V
+
+ KVM内核模块本身只能提供CPU和内存的虚拟化，所以它必须结合QEMU才能构成一个完成的虚拟化技术
+
+
+七、yum模块
+使用yum包管理器来管理软件包，其选项有
+
+ haproxy是一款非常的专业的全7层的反向代理负载均衡器,采用的是epoll机制
+Haproxy L4 四层  不建议使用  四层lvs使用
+
+listen是frontend和backend的结合体
+roundrobin  动态，加权轮询，所谓动态就是可以实时生效，不用重启服务
+static-rr   静态轮询，需重启服务
+leastconn   动态，根据后端主机的负载数量进行调度
+source   类似源地址hash，
+
+读写分离，读在从主机上。要保证一直就来了主从复制。
+
