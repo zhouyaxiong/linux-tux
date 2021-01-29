@@ -4,6 +4,8 @@ this can help you to create a test
 :+1:
 
 
+jvm属性监控
+
             Client                                       
           +---------+                    +--------------+              
           |  JVM    |                    |              |              +-------------+               +-------------+  
